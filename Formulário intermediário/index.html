@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário Intermediário</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Staatliches&display=swap" rel="stylesheet">
+
+  </head>
+  <div class="page">
+    <body>
+      <header>
+        <h1>MENTORIA</h1>
+
+        <p>
+          Preencha o formulário abaixo para<br/>
+          agendar a sua mentoria
+        </p>
+      </header>
+      
+      <form id="my-form" action="">
+        <div class="personal-infomation">
+          <h2>INFORMAÇÕES PESSOAIS</h2>
+          <div class="line"></div>
+          <div class=”fieldset-wrapper”>
+            <legend class="name">
+              <div class="input-wrapper">
+                <label for="input-text">Nome</label>
+                <input type="text" required>
+              </div>
+              <div class="input-wrapper">
+                <label for="input-text">Sobrenome</label>
+                <input type="text" required>
+              </div>
+            </legend>
+            <legend class="login-wrapper">
+              <div class="input-wrapper">
+                <label for="input-email">Email <span>(digite um email válido)</span></label>
+                <input type="email" required>
+              </div>
+              <div class="input-wrapper">
+                <label for="input-password">Senha <span>(minimo de 6 caracteres)</span></label>
+                <input type="password" required minlength="8">
+              </div>
+            </legend>
+          </div>
+        </div>
+
+        <div class="mentor-infomation">
+          <h2>INFORMAÇÕES DO MENTOR</h2>
+          <div class="line"></div>
+          <div class=”fieldset-wrapper”>
+            <legend class="mentor">
+              <div class="input-wrapper">
+                <label for="input-text">Nome do seu mentor <span>(só o primeiro nome)</span></label>
+                <input type="text" required>
+              </div>
+            </legend>
+          </div>>
+        </div>
+
+        <div class="time-information">
+          <h2>SEUS HORÁRIOS DISPONÍVEIS</h2>
+          <div class="line"></div>
+          <div class=”fieldset-wrapper”>
+            <h3>PRIMEIRA MENTORIA</h3>
+            <legend class="mentorship">
+              <div class="date-input-wrapper">
+                <label for="input-date">Data <span>(DD/MM/AAA)</span></label>
+                <input type="date" required>
+              </div>
+              <div class="time-input-wrapper">
+                <label for="input-time">Das</label>
+                <input type="time" required>
+              </div>
+              <div class="time-input-wrapper">
+                <label for="input-time">Até</label>
+                <input type="time" required>
+              </div>
+            </legend>
+
+            <h3>Segunda MENTORIA</h3>
+            <legend class="mentorship">
+              <div class="date-input-wrapper">
+                <label for="input-date">Data <span>(DD/MM/AAA)</span></label>
+                <input type="date" required>
+              </div>
+              <div class="time-input-wrapper">
+                <label for="input-time">Das</label>
+                <input type="time" required>
+              </div>
+              <div class="time-input-wrapper">
+                <label for="input-time">Até</label>
+                <input type="time" required>
+              </div>
+            </legend>
+          </div>
+        </div>
+      </form>
+      <footer>
+        <button class="button" type=”button” form="my-form">
+          Salvar
+        </button>
+      </footer>
+    </body>
+  </div>
+</html>
